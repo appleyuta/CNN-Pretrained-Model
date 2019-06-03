@@ -3,6 +3,9 @@
 
 # 実行に必要なライブラリ
 ・numpy
+
 ・matplotlib
+
 ・opencv
+
 ・Keras
