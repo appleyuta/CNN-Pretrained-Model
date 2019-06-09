@@ -23,10 +23,10 @@ mobilenet_model = mobilenet.MobileNet(weights='imagenet')
 filename = 'images/cat.jpg'
 #画像を学習サイズ(224,224)で読み込み
 original = load_img(filename,target_size=(224,224))
-print('PIL image size',original.size)
 plt.imshow(original)
 plt.axis('off')
 plt.show()
+print('PIL image size',original.size)
 #PIL形式をnumpy配列に変換
 numpy_image = img_to_array(original)
 print('numpy array size',numpy_image.shape)
