@@ -62,7 +62,6 @@ for inputs_batch,labels_batch in train_generator:
 
 #7×7×512のテンソルを7*7*512のベクトルに変換
 train_features = np.reshape(train_features,(nTrain,7*7*512))
-print(train_features)
 
 validation_features = np.zeros(shape=(nVal,7,7,512))
 validation_labels = np.zeros(shape=(nVal,3))
